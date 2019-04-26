@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ChoseBrithdayView" customModule="DATING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IXz-D4-G7y">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.63810546875000007" green="0.63810546875000007" blue="0.63810546875000007" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="w85-7U-Ri9">
+                    <rect key="frame" x="0.0" y="467" width="375" height="200"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" placeholderIntrinsicWidth="375" placeholderIntrinsicHeight="154" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="maW-Wt-sGc">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+                            <date key="date" timeIntervalSinceReferenceDate="551108286.53185999">
+                                <!--2018-06-19 13:38:06 +0000-->
+                            </date>
+                            <date key="minimumDate" timeIntervalSinceReferenceDate="-978267600">
+                                <!--1970-01-01 11:00:00 +0000-->
+                            </date>
+                            <date key="maximumDate" timeIntervalSinceReferenceDate="1167562800">
+                                <!--2037-12-31 11:00:00 +0000-->
+                            </date>
+                            <locale key="locale" localeIdentifier="zh_MO"/>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0H-x0-zm7">
+                            <rect key="frame" x="144" y="162" width="87" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.053247011927186727" blue="0.12765409502812364" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="87" id="DeZ-n6-SC9"/>
+                                <constraint firstAttribute="height" constant="30" id="mwG-ZO-9Wl"/>
+                            </constraints>
+                            <state key="normal" title="确定">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="4"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="enterAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="FKw-XG-38d"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="o0H-x0-zm7" secondAttribute="bottom" constant="8" id="BQT-Sl-bun"/>
+                        <constraint firstItem="o0H-x0-zm7" firstAttribute="centerX" secondItem="w85-7U-Ri9" secondAttribute="centerX" id="W9p-xT-Gn2"/>
+                        <constraint firstItem="maW-Wt-sGc" firstAttribute="centerX" secondItem="w85-7U-Ri9" secondAttribute="centerX" id="awh-mG-lCr"/>
+                        <constraint firstAttribute="height" constant="200" id="i3p-V7-yz2"/>
+                        <constraint firstItem="maW-Wt-sGc" firstAttribute="width" secondItem="w85-7U-Ri9" secondAttribute="width" id="k1v-hx-vvp"/>
+                        <constraint firstItem="o0H-x0-zm7" firstAttribute="top" secondItem="maW-Wt-sGc" secondAttribute="bottom" constant="8" id="rN0-aC-MGf"/>
+                        <constraint firstItem="maW-Wt-sGc" firstAttribute="top" secondItem="w85-7U-Ri9" secondAttribute="top" id="xNX-MI-vvh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="IXz-D4-G7y" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0wx-dD-pxO"/>
+                <constraint firstAttribute="bottom" secondItem="w85-7U-Ri9" secondAttribute="bottom" id="AfC-Bc-MRe"/>
+                <constraint firstAttribute="trailing" secondItem="IXz-D4-G7y" secondAttribute="trailing" id="HHj-ap-jgF"/>
+                <constraint firstAttribute="bottom" secondItem="IXz-D4-G7y" secondAttribute="bottom" id="alo-jG-4bY"/>
+                <constraint firstAttribute="trailing" secondItem="w85-7U-Ri9" secondAttribute="trailing" id="fVy-gx-GJo"/>
+                <constraint firstItem="IXz-D4-G7y" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jbi-gA-Dbu"/>
+                <constraint firstItem="w85-7U-Ri9" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kF7-Vd-USq"/>
+            </constraints>
+            <connections>
+                <outlet property="bgView" destination="IXz-D4-G7y" id="UfM-Lm-j11"/>
+                <outlet property="datePateView" destination="maW-Wt-sGc" id="2O5-LG-4wb"/>
+            </connections>
+            <point key="canvasLocation" x="119.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<string>运动</string>
+	<string>旅游</string>
+	<string>跳舞</string>
+	<string>逛街</string>
+	<string>泡吧</string>
+	<string>电脑</string>
+	<string>电影</string>
+	<string>音乐</string>
+	<string>游戏</string>
+	<string>炒股</string>
+	<string>阅读</string>
+	<string>绘画</string>
+	<string>摄影</string>
+	<string>书法</string>
+	<string>棋牌</string>
+	<string>ren</string>
+	<string>聚会</string>
+	<string>养宠物</string>
+	<string>卡拉OK</string>
+</array>
+</plist>

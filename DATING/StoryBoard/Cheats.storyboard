@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="DQg-92-eMM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--通讯录-->
+        <scene sceneID="dyg-CE-TKE">
+            <objects>
+                <navigationController storyboardIdentifier="Cheats" id="DQg-92-eMM" customClass="SSTBaseNC" customModule="DATING" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="通讯录" image="ic_main_sayhi" selectedImage="ic_main_sayhi_selected" id="nPq-H0-lkh"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ReH-Ul-Dqv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dDS-iS-k3X" kind="relationship" relationship="rootViewController" id="QrC-om-OMP"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecl-SQ-Eo6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="207"/>
+        </scene>
+        <!--通讯录-->
+        <scene sceneID="UQf-d3-oZj">
+            <objects>
+                <viewController id="dDS-iS-k3X" customClass="DATCheatsVC" customModule="DATING" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hQm-Ed-Tpb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qhs-7Y-bqQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4MU-jm-Lyz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="y02-5i-vpa">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="dDS-iS-k3X" id="wcJ-sd-Gdj"/>
+                                    <outlet property="delegate" destination="dDS-iS-k3X" id="ke8-3E-kNW"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y02-5i-vpa" firstAttribute="top" secondItem="hQm-Ed-Tpb" secondAttribute="bottom" id="IBB-GL-oCO"/>
+                            <constraint firstItem="y02-5i-vpa" firstAttribute="leading" secondItem="4MU-jm-Lyz" secondAttribute="leading" id="cE8-pS-HUX"/>
+                            <constraint firstItem="Qhs-7Y-bqQ" firstAttribute="top" secondItem="y02-5i-vpa" secondAttribute="bottom" id="dEp-Y4-xhQ"/>
+                            <constraint firstAttribute="trailing" secondItem="y02-5i-vpa" secondAttribute="trailing" id="gen-Jg-Suw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="通讯录" id="6Gt-Oj-QN7"/>
+                    <connections>
+                        <outlet property="tableView" destination="y02-5i-vpa" id="jex-4z-c40"/>
+                        <segue destination="brz-uW-LSe" kind="push" identifier="toUserDetailVC" id="cq9-RY-XjF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mww-ah-McF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.80000000000001" y="205.54722638680661"/>
+        </scene>
+        <!--DATUserDetailVC-->
+        <scene sceneID="0Xs-cx-KNw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" referencedIdentifier="DATUserDetailVC" id="brz-uW-LSe" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="c7o-W3-2OZ"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atW-J7-VUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1030" y="69"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_main_sayhi" width="25" height="25"/>
+        <image name="ic_main_sayhi_selected" width="25" height="25"/>
+    </resources>
+</document>

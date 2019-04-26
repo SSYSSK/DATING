@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DATUserDetailTopView" customModule="DATING" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="340" height="188"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_blur_bg_sky" translatesAutoresizingMaskIntoConstraints="NO" id="Xow-UQ-6lA">
+                    <rect key="frame" x="0.0" y="0.0" width="340" height="188"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5ah-fN-IHE">
+                    <rect key="frame" x="133" y="38.5" width="75" height="75"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="5ah-fN-IHE" secondAttribute="height" multiplier="1:1" id="5E6-KF-OTQ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqW-u2-72c">
+                    <rect key="frame" x="0.0" y="116.5" width="340" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="n20-mQ-AkD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yzC-Lz-0yj">
+                    <rect key="frame" x="0.0" y="138.5" width="340" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Nlb-Oj-dK3"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="XqW-u2-72c" secondAttribute="trailing" id="00Y-u2-8An"/>
+                <constraint firstItem="Xow-UQ-6lA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="6bE-v1-UJW"/>
+                <constraint firstItem="5ah-fN-IHE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6uk-cF-TUd"/>
+                <constraint firstItem="5ah-fN-IHE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" multiplier="0.81" id="7AO-iP-Dtu"/>
+                <constraint firstItem="5ah-fN-IHE" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.22:1" id="HsG-pa-9ak"/>
+                <constraint firstItem="yzC-Lz-0yj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jqi-b8-LXh"/>
+                <constraint firstAttribute="trailing" secondItem="yzC-Lz-0yj" secondAttribute="trailing" id="OFm-8Q-oN0"/>
+                <constraint firstItem="yzC-Lz-0yj" firstAttribute="top" secondItem="XqW-u2-72c" secondAttribute="bottom" constant="1" id="PWd-Fh-Hhf"/>
+                <constraint firstItem="XqW-u2-72c" firstAttribute="top" secondItem="5ah-fN-IHE" secondAttribute="bottom" constant="3" id="QVv-Xa-Ie2"/>
+                <constraint firstItem="Xow-UQ-6lA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Vl6-dq-I59"/>
+                <constraint firstAttribute="trailing" secondItem="Xow-UQ-6lA" secondAttribute="trailing" id="WTi-ct-j3a"/>
+                <constraint firstAttribute="bottom" secondItem="Xow-UQ-6lA" secondAttribute="bottom" id="ZAp-w8-AwT"/>
+                <constraint firstItem="XqW-u2-72c" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fRS-hi-BPe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="iconImageView" destination="5ah-fN-IHE" id="0fE-br-SJe"/>
+                <outlet property="infoLabel" destination="yzC-Lz-0yj" id="ALg-fo-vOZ"/>
+                <outlet property="nameLABEL" destination="XqW-u2-72c" id="npU-qO-tkA"/>
+            </connections>
+            <point key="canvasLocation" x="17" y="-200"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_avatar_blur_bg_sky" width="399" height="228"/>
+    </resources>
+</document>
